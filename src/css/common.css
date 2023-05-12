@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,9 +12,35 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  margin: 50px;
+  background-color: blanchedalmond;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight:lighter;
+  font-style: italic;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+a:hover{
+  font-weight: bold;
+  background-color: gray;
+  transform: translateX(0.5px) rotate(5deg) scale(0.99);
 }
