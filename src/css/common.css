@@ -13,7 +13,7 @@ body {
   color: #212121;
   line-height: 1.5;
   margin: 50px;
-  background-color: blanchedalmond;
+  background-color: rgb(223, 223, 223);
 }
 
 img {
@@ -42,5 +42,5 @@ a{
 a:hover{
   font-weight: bold;
   background-color: gray;
-  transform: translateX(0.5px) rotate(5deg) scale(0.99);
+  transform: translateX(0.5px) rotate(-1deg) scale(0.99);
 }
