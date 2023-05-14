@@ -22,10 +22,12 @@ img {
 }
 
 ul {
+	display: flex;
 	list-style: none;
 }
 
 li {
+	margin-right: 5px;
 	margin-bottom: 10px;
 }
 
@@ -36,7 +38,7 @@ a {
 	font-style: italic;
 	background-color: gray;
 	border-radius: 10px;
-	padding: 5px;
+	padding: 5px 15px;
 }
 
 a:hover,
