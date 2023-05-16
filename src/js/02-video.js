@@ -19,20 +19,3 @@ player.on('timeupdate', throttle(Async, 1000));
 
 const currentTime = localStorage.getItem('videoplayer-current-time');
 currentTime ? player.setCurrentTime(currentTime) : null;
-
-/*                                  utilizando promesas
-player.on(
-	'timeupdate',
-	throttle(() => {
-		player.getCurrentTime().then(seconds => {
-			localStorage.setItem('videoplayer-current-time', seconds);
-			console.log('videoplayer-current-time', seconds);
-		});
-	}, 1000)
-);
-*/
-
-/* 
-if (currentTime !== '') {
-player.setCurrentTime(currentTime);
-}*/
