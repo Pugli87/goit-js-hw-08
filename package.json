@@ -1,6 +1,6 @@
 {
-	"name": "parcel-project-template",
-	"version": "2.0.0",
+	"name": "goit-js-hw-08",
+	"version": "1.0.0",
 	"description": "This project was created with Parcel. For familiarization and setting additional features [refer to documentation](https://parceljs.org/).",
 	"homepage": "https://Pugli87.github.io/goit-js-hw-08",
 	"scripts": {
@@ -19,6 +19,7 @@
 	},
 	"dependencies": {
 		"@vimeo/player": "^2.19.0",
+		"lodash": "^4.17.21",
 		"lodash.throttle": "^4.1.1",
 		"modern-normalize": "^1.1.0",
 		"simplelightbox": "^2.14.0"
