@@ -1,5 +1,5 @@
 import Vimeo from '@vimeo/player'; // importacion de la biblioteca de vimeo
-import { throttle } from 'lodash'; // importatcion de la funccion throttle de lodash
+import _ from 'lodash'; // importatcion de la funcion throttle de lodash
 
 const player = new Vimeo(document.querySelector('#vimeo-player')); // Hacemos referencia al id del iframe
 
@@ -15,7 +15,7 @@ const Async = async () => {
 	}
 };
 
-player.on('timeupdate', throttle(Async, 1000));
+player.on('timeupdate', _.throttle(Async, 1000));
 
 const currentTime = localStorage.getItem('videoplayer-current-time');
 currentTime ? player.setCurrentTime(currentTime) : null;
