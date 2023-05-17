@@ -27,7 +27,7 @@ ul {
 
 li {
 	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 a {
@@ -38,7 +38,7 @@ a {
 	color: deepskyblue;
 	background-color: rgb(92, 92, 92);
 	border-radius: 10px;
-	padding: 0 8px;
+	padding: 3px 8px;
 	border: #000000 double 2px;
 	box-shadow: -5px -10px 10px gray;
 }
