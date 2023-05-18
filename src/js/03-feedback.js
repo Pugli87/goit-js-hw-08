@@ -36,10 +36,13 @@ const handleSubmit = event => {
 	const email = document.querySelector('input[name="email"]').value;
 	const message = document.querySelector('textarea[name="message"]').value;
 
-	console.log('Form submitted:');
-	console.log('Email:', email);
-	console.log('Message:', message);
+	// asignamos el local store dentro una varible para luego imprimirla en consola
+	const storedFormState = JSON.parse(
+		localStorage.getItem('feedback-form-state')
+	);
+	console.log(storedFormState);
 
+	// limpiamos el estado del formulario
 	clearFormState();
 };
 
