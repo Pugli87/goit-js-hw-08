@@ -1,6 +1,6 @@
 import _ from 'lodash'; // importatcion de la funccion throttle de lodash
 
-// Función para guardar el estado del formulario en el almacenamiento local
+// Función para guardar el estado del formulario en el almacenamiento local <--setItem-->
 const saveFormState = () => {
 	const formState = {
 		email: document.querySelector('input[name="email"]').value,
@@ -10,19 +10,18 @@ const saveFormState = () => {
 	localStorage.setItem('feedback-form-state', JSON.stringify(formState));
 };
 
-// Función para cargar el estado del formulario desde el almacenamiento local
+// Función para cargar el estado del formulario desde el almacenamiento local <--getItem-->
 const loadFormState = () => {
 	const savedState = localStorage.getItem('feedback-form-state');
 
 	if (savedState) {
 		const formState = JSON.parse(savedState);
-		document.querySelector('input[name="email"]').value = formState.email;
-		document.querySelector('textarea[name="message"]').value =
-			formState.message;
+		formState.email = document.querySelector('input[name="email"]').value;
+		formState.message = document.querySelector('textarea[name="message"]').value;
 	}
 };
 
-// Función para borrar el estado del formulario y los campos del almacenamiento local
+// Función para borrar el estado del formulario y los campos del almacenamiento local <--remoteItem-->
 const clearFormState = () => {
 	localStorage.removeItem('feedback-form-state');
 	document.querySelector('input[name="email"]').value = '';
@@ -55,3 +54,4 @@ window.addEventListener('DOMContentLoaded', loadFormState);
 
 // Añadir evento submit al formulario para manejar el envío
 form.addEventListener('submit', handleSubmit);
+
