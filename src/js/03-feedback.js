@@ -1,4 +1,5 @@
 import _ from 'lodash'; // importatcion de la funccion throttle de lodash
+const form = document.querySelector('.feedback-form');
 
 // Función para guardar el estado del formulario en el almacenamiento local <--setItem-->
 const saveFormState = () => {
@@ -46,7 +47,6 @@ const handleSubmit = event => {
 };
 
 // Añadir evento input al formulario para guardar el estado del formulario en el almacenamiento local
-const form = document.querySelector('.feedback-form');
 form.addEventListener('input', _.throttle(saveFormState, 500));
 
 // Cargar el estado del formulario al cargar la página
